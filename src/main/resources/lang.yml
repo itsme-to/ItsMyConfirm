@@ -1,0 +1,14 @@
+messages:
+    prefix: "&aItsMyConfirm&r &8» &r"
+    no-permission: "&cYou don't have permission to do this!"
+    not-player: "&cThis command must be run by a player"
+    invalid-command: "&cUnknown subcommand!"
+    reloaded: "&fReloaded in &a%time%ms&f!"
+
+    must-specify-player: "&cYou must specify a player!"
+    invalid-player: "&cInvalid player!"
+
+    must-specify-confirmation: "&cYou must specify a confirmation!"
+    invalid-confirmation: "&cInvalid confirmation!"
+
+    confirmation-opened: "&rConfirmation &a%confirmation% &ropened for &6%playername%&r!"

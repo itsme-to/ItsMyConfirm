@@ -1,0 +1,63 @@
+gui:
+  title: "&6Confirm"
+  mask:
+    # The way the mask works is by having a list of materials
+    # And then a pattern to use those materials.
+
+    # The pattern is the rows in the GUI
+    # Each line must be 9 long, and the amount of rows should be the amount of rows in the GUI
+    # A zero represents nothing
+    # A 1 represents the first material
+    # A 2 represents the second material
+    # And so on, you can add up to 9.
+
+    materials:
+      - black_stained_glass_pane
+      - magenta_stained_glass_pane
+    pattern:
+      - "111111111"
+      - "110101011"
+      - "111111111"
+  buttons:
+    confirm:
+      location:
+        row: 2
+        column: 7
+      item: "emerald unbreaking:1 hide_enchants"
+      name: "&aConfirm"
+      lore:
+        - ""
+        - "&bLeft click &fto confirm for &r%price%"
+        - ""
+    deny:
+      location:
+        row: 2
+        column: 3
+      item: "redstone unbreaking:1 hide_enchants"
+      name: "&cDeny"
+      lore:
+        - ""
+        - "&bLeft click &fto deny"
+        - ""
+    confirmation:
+      location:
+        row: 2
+        column: 5
+
+confirmations:
+  - id: "example"
+    gui-title: "&eExample Confirm"
+    item:
+      item: "paper unbreaking:1 hide_enchants"
+      name: "&eExample Confirmation"
+      lore:
+        - ""
+        - "&6Price: &r%price%"
+        - ""
+    price:
+      value: 100 * %player_y%
+      type: coins
+      display: "&2%value%$"
+    effects:
+      confirm: []
+      deny: []

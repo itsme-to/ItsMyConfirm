@@ -1,0 +1,8 @@
+environment:
+    - name: libreforge version
+      value: ${libreforgeVersion}
+
+options:
+  color: "&a"
+  uses-reflective-reload: false
+  supports-extensions: true

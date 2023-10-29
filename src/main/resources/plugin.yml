@@ -1,0 +1,12 @@
+name: ${pluginName}
+version: ${version}
+main: ru.oftendev.itsmyconfirm.ItsMyConfirm
+author: _OfTeN_
+api-version: 1.17
+depend:
+    - eco
+commands:
+    itsmyconfirm:
+        aliases: [ ]
+    confirm:
+        aliases: [ cf ]
